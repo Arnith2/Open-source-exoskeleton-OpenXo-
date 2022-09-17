@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ParamWithValueList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>20080502</version>
+  <parameterTypes>
+    <ParamType>
+      <typeName>Inventor</typeName>
+      <typeCode>0</typeCode>
+    </ParamType>
+    <ParamType>
+      <typeName>String</typeName>
+      <typeCode>1</typeCode>
+    </ParamType>
+    <ParamType>
+      <typeName>Boolean</typeName>
+      <typeCode>2</typeCode>
+    </ParamType>
+  </parameterTypes>
+  <parameters>
+    <ParamWithValue>
+      <name>Cycloid_Roller_dimention</name>
+      <typeCode>mm</typeCode>
+      <value>12 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Eccentricity</name>
+      <typeCode>mm</typeCode>
+      <value>2.5 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_NumberOfRollers</name>
+      <typeCode>ul</typeCode>
+      <value>10 ul</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Roller_radius</name>
+      <typeCode>mm</typeCode>
+      <value>Cycloid_Roller_dimention / 2 ul</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Rotor_X_param</name>
+      <typeCode>String</typeCode>
+      <value>(Rotor_radius*cos(t))-(Roller_radius*cos(t+atan(sin((1-NumberOfRollers)*t)/((Rotor_radius/(Eccentricity*NumberOfRollers))-cos((1-NumberOfRollers)*t)))))-(Eccentricity*cos(NumberOfRollers*t)) </value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Rotor_Y_param</name>
+      <typeCode>String</typeCode>
+      <value>(-Rotor_radius*sin(t))+(Roller_radius*sin(t+atan(sin((1-NumberOfRollers)*t)/((Rotor_radius/(Eccentricity*NumberOfRollers))-cos((1-NumberOfRollers)*t)))))+(Eccentricity*sin(NumberOfRollers*t)) </value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_MaxDimentions</name>
+      <typeCode>mm</typeCode>
+      <value>150 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Stator_lobe_number</name>
+      <typeCode>ul</typeCode>
+      <value>Cycloid_NumberOfRollers + 1 ul</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Number_output_holes</name>
+      <typeCode>ul</typeCode>
+      <value>6 ul</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Pin_set_dimention</name>
+      <typeCode>mm</typeCode>
+      <value>22 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Pin_bearing_outer_dimention</name>
+      <typeCode>mm</typeCode>
+      <value>Cycloid_Pin_set_dimention</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Shaft_dimention</name>
+      <typeCode>mm</typeCode>
+      <value>2 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Rotor_Shaft_bearing_dimention</name>
+      <typeCode>mm</typeCode>
+      <value>10 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_WallThickness</name>
+      <typeCode>mm</typeCode>
+      <value>2 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Pin_bearing_inner_dimention</name>
+      <typeCode>mm</typeCode>
+      <value>3 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Rotor_dimention</name>
+      <typeCode>mm</typeCode>
+      <value>Cycloid_MaxDimentions - Cycloid_Roller_dimention - Cycloid_WallThickness - 2 ul * Cycloid_Eccentricity</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Rotor_radius</name>
+      <typeCode>mm</typeCode>
+      <value>Cycloid_Rotor_dimention / 2 ul</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Stator_dimentions</name>
+      <typeCode>mm</typeCode>
+      <value>Cycloid_Rotor_dimention + ( 2 ul + Compensation ) * Cycloid_Eccentricity</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Stator_radius</name>
+      <typeCode>mm</typeCode>
+      <value>Cycloid_Stator_dimentions / 2 ul</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Output_hole_set_diameter</name>
+      <typeCode>mm</typeCode>
+      <value>Cycloid_Pin_bearing_outer_dimention + Cycloid_Eccentricity * 2 ul</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Output_hole_dimention</name>
+      <typeCode>mm</typeCode>
+      <value>Cycloid_Output_hole_set_diameter</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Output_Pin_Position</name>
+      <typeCode>mm</typeCode>
+      <value>( Cycloid_Rotor_dimention + Cycloid_Pin_set_dimention ) / 4 ul</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Stator_X_param</name>
+      <typeCode>String</typeCode>
+      <value>(Outer_rotor_radius*cos(t))-(Roller_radius*cos(t+atan(sin((1-Outer_lobe_number)*t)/((Outer_rotor_radius/(Eccentricity*Outer_lobe_number))-cos((1-Outer_lobe_number)*t)))))-(Eccentricity*cos(Outer_lobe_number*t)) </value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Stator_Y_param</name>
+      <typeCode>String</typeCode>
+      <value>(-Outer_rotor_radius*sin(t))+(Roller_radius*sin(t+atan(sin((1-Outer_lobe_number)*t)/((Outer_rotor_radius/(Eccentricity*Outer_lobe_number))-cos((1-Outer_lobe_number)*t)))))+(Eccentricity*sin(Outer_lobe_number*t))</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Stator_Eccentricity</name>
+      <typeCode>mm</typeCode>
+      <value>Cycloid_Eccentricity + Cycloid_Eccentricity * Compensation / 2 ul</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Shaft_Bearing_Outer_placeholder</name>
+      <typeCode>mm</typeCode>
+      <value>32 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Shaft_Bearing_Inner_placeholder</name>
+      <typeCode>mm</typeCode>
+      <value>20 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Output_Pin_Position2</name>
+      <typeCode>mm</typeCode>
+      <value>73.376 mm / 2 ul</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Printer_Slide_Fit_Rotor_Stator</name>
+      <typeCode>mm</typeCode>
+      <value>0.2 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Eccentricity2</name>
+      <typeCode>mm</typeCode>
+      <value>2.5 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Output_hole_dimention</name>
+      <typeCode>mm</typeCode>
+      <value>Output_hole_set_diameter</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Cycloid_Output_pin_position</name>
+      <typeCode>mm</typeCode>
+      <value>75 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+  </parameters>
+</ParamWithValueList>
