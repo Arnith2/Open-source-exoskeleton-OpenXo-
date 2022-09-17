@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ParamWithValueList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>20080502</version>
+  <parameterTypes>
+    <ParamType>
+      <typeName>Inventor</typeName>
+      <typeCode>0</typeCode>
+    </ParamType>
+    <ParamType>
+      <typeName>String</typeName>
+      <typeCode>1</typeCode>
+    </ParamType>
+    <ParamType>
+      <typeName>Boolean</typeName>
+      <typeCode>2</typeCode>
+    </ParamType>
+  </parameterTypes>
+  <parameters>
+    <ParamWithValue>
+      <name>Machine_Screw_M</name>
+      <typeCode>ul</typeCode>
+      <value>3 ul</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Machine_Screw_Head_Radius</name>
+      <typeCode>mm</typeCode>
+      <value>5.5 mm / 2 ul</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Machine_Screw_Head_Dept</name>
+      <typeCode>mm</typeCode>
+      <value>3 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Machine_Screw_Hex</name>
+      <typeCode>mm</typeCode>
+      <value>2.3 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Machine_Screw_Length</name>
+      <typeCode>mm</typeCode>
+      <value>8 mm</value>
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+    <ParamWithValue>
+      <name>Machine_Screw</name>
+      <typeCode>String</typeCode>
+      <value />
+      <comment />
+      <isKey>true</isKey>
+    </ParamWithValue>
+  </parameters>
+</ParamWithValueList>
